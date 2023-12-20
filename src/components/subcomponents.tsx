@@ -62,8 +62,7 @@ export const Rowwrapper = styled(Row)`
   max-width: 1500px;
 `;
 
-export const Colwrapper = styled(Col)` 
-`;
+export const Colwrapper = styled(Col)``;
 
 export const TitleWrapper = styled.div<WrapperProsp>`
   margin: ${({ margin }) => (margin ? margin : "20px 0")};
@@ -74,7 +73,6 @@ export const TitleWrapper = styled.div<WrapperProsp>`
   text-align: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "center")};
   padding-left: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : null)};
 `;
-
 
 export const Title = styled.h1<FontProsp>`
   font-size: ${({ font }) => (font ? font : `36px`)};
@@ -109,4 +107,22 @@ export const Subtitles = styled.p<FontProsp>`
     letterSpacing ? letterSpacing : null};
   padding-top: ${({ paddingTop }) => (paddingTop ? paddingTop : null)};
   text-align: ${({ textAlign }) => (textAlign ? textAlign : null)};
+`;
+
+export const ImageWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: -60px;
+  width: 500px;
+  height: 500px; 
+`;
+
+export const Image = styled.img`
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 `;

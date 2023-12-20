@@ -9,8 +9,11 @@ import {
   TitleWrapper,
   Title,
   Subtitles,
+  ImageWrapper,
+  Image,
 } from "./subcomponents";
 import { Typewriter } from "react-simple-typewriter";
+import manoj_image from "../assests/manoj.png";
 
 const Home = (): ReactElement => {
   return (
@@ -32,7 +35,7 @@ const Home = (): ReactElement => {
         <HomeWrapper>
           <Rowwrapper>
             <Colwrapper lg={8} xl={6}>
-              <TitleWrapper paddingLeft="65px" className="mt-5">
+              <TitleWrapper paddingLeft="65px" style={{ marginTop: "80px" }}>
                 <Title color="#fff" font="50px">
                   HI, I'M MANOJKUMAR S!
                 </Title>
@@ -69,8 +72,10 @@ const Home = (): ReactElement => {
                 </Subtitles>
               </TitleWrapper>
             </Colwrapper>
-            <Colwrapper lg={4} xl={5}>
-              dfdg
+            <Colwrapper lg={4} xl={5}  >
+              <ImageWrapper>
+                <Image src={manoj_image} alt="" />
+              </ImageWrapper>
             </Colwrapper>
           </Rowwrapper>
         </HomeWrapper>
