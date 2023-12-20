@@ -1,7 +1,5 @@
-import React from "react";
-import "./App.css";
-import Home from "./components";
 import { createGlobalStyle } from "styled-components";
+import { Home, Footer } from "./components";
 
 export const GlobalStyle = createGlobalStyle`
 body{  
@@ -13,6 +11,7 @@ function App() {
   return (
     <>
       <Home />
+      <Footer />
       <GlobalStyle />
     </>
   );
