@@ -1,31 +1,11 @@
 import React, { ReactElement } from "react";
-import { FooterWrapper, Words, IconWrapper } from "./subcomponents";
+import { FooterWrapper, Words } from "./subcomponents";
 
 const Footer = (): ReactElement => {
   return (
     <FooterWrapper>
-      <Words> Copyright © 2024 | Designed & Built by Manojkumar S</Words>
-      <Words>
-        <IconWrapper>
-          <i
-            className="bx bxl-github"
-            onClick={() => {
-              window.open("https://github.com/Manojkumar-MK18");
-            }}
-          ></i>
-
-          <i
-            className="bx bxl-linkedin"
-            onClick={() => {
-              window.open(
-                "https://www.linkedin.com/in/manojkumar-s-27a084208/"
-              );
-            }}
-          ></i>
-          <i className="bx bxl-instagram"></i>
-          <i className="bx bxl-twitter"></i>
-        </IconWrapper>
-      </Words>
+      <Words> Designed & Built by Manojkumar S</Words>
+      <Words>Copyright © 2024 </Words>
     </FooterWrapper>
   );
 };

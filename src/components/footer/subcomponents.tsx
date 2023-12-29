@@ -16,10 +16,14 @@ export const Words = styled.span`
 
 export const IconWrapper = styled.div`
   i {
-    padding: 0 10px;
-    font-size: 18px;
+    padding: 0 30px 0 0;
+    font-size: 25px;
     color: white;
     cursor: pointer;
     transition: all 0.4s;
+    color: rgb(148 163 184/1);
+    &:hover {
+      color: white;
+    }
   }
 `;

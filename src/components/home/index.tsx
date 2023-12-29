@@ -14,6 +14,7 @@ import {
 } from "./subcomponents";
 import { Typewriter } from "react-simple-typewriter";
 import manoj_image from "../../assests/manoj.png";
+import { IconWrapper } from "../footer/subcomponents";
 
 const Home = (): ReactElement => {
   return (
@@ -35,7 +36,7 @@ const Home = (): ReactElement => {
         <HomeWrapper>
           <Rowwrapper>
             <Colwrapper lg={8} xl={6}>
-              <TitleWrapper paddingLeft="3rem" style={{ marginTop: "80px" }}>
+              <TitleWrapper paddingLeft="3rem" style={{ marginTop: "70px" }}>
                 <Title color="rgb(226 232 240/1)" font="50px">
                   Manojkumar S
                 </Title>
@@ -66,11 +67,29 @@ const Home = (): ReactElement => {
                   lineHeight="30px"
                   fontWeight={500}
                 >
-                  I’m a software Developer with two years of hands-on experience in creating dynamic and
-                  innovative web applications. My passion for technology,
-                  coupled with a strong foundation in both front-end and
-                  back-end development.
-                </Subtitles>
+                  I’m a software developer with two years of hands-on experience
+                  in creating dynamic and innovative web applications. My
+                  passion for technology is coupled with a strong foundation in
+                  both front-end and back-end development.
+                </Subtitles>{" "}
+                <IconWrapper className="mt-4">
+                  <i
+                    className="bx bxl-linkedin"
+                    onClick={() => {
+                      window.open(
+                        "https://www.linkedin.com/in/manojkumar-s-27a084208/"
+                      );
+                    }}
+                  ></i>{" "}
+                  <i
+                    className="bx bxl-github"
+                    onClick={() => {
+                      window.open("https://github.com/Manojkumar-MK18");
+                    }}
+                  ></i>
+                  <i className="bx bxl-instagram"></i>
+                  <i className="bx bxl-twitter"></i>
+                </IconWrapper>
               </TitleWrapper>
             </Colwrapper>
             <Colwrapper lg={4} xl={5}>
