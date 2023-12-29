@@ -20,5 +20,6 @@ export const IconWrapper = styled.div`
     font-size: 18px;
     color: white;
     cursor: pointer;
+    transition: all 0.4s;
   }
 `;

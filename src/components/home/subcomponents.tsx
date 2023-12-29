@@ -1,4 +1,4 @@
-import { Col, Nav, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import styled from "styled-components";
 import home_1 from "../../assests/home_1.jpg";
 import { FontProsp, WrapperProsp } from "./types";
@@ -9,10 +9,10 @@ export const PageWrapper = styled.div`
   overflow: hidden !important;
 `;
 
-export const Navbar = styled(Nav)`
+export const Navbar = styled.header`
   position: fixed;
-  background-color: #141c27;
-  height: 80px;
+  background: radial-gradient(600px at 1050px 400px, #202d41, transparent 90%);
+  height: 70px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -21,6 +21,7 @@ export const Navbar = styled(Nav)`
 
   ul {
     margin-right: 80px;
+    margin-top: 15px;
   }
   li {
     color: #fff;
@@ -52,6 +53,7 @@ export const HomeContainer = styled.section`
 export const HomeWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
+  max-width: 1500px;
 `;
 
 export const Rowwrapper = styled(Row)`
@@ -118,7 +120,7 @@ export const ImageWrapper = styled.div`
   position: relative;
   top: -60px;
   width: 500px;
-  height: 500px; 
+  height: 500px;
 `;
 
 export const Image = styled.img`

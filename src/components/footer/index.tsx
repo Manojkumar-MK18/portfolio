@@ -4,7 +4,7 @@ import { FooterWrapper, Words, IconWrapper } from "./subcomponents";
 const Footer = (): ReactElement => {
   return (
     <FooterWrapper>
-      <Words> Copyright © 2024 | Designed and Developed by Manojkumar S</Words>
+      <Words> Copyright © 2024 | Designed & Built by Manojkumar S</Words>
       <Words>
         <IconWrapper>
           <i
