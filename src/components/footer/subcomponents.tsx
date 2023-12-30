@@ -24,6 +24,8 @@ export const IconWrapper = styled.div`
     color: rgb(148 163 184/1);
     &:hover {
       color: white;
+      transform: translateY(-3px);
+      transition: all 0.4s;
     }
   }
 `;
