@@ -13,7 +13,7 @@ import {
   Image,
 } from "./subcomponents";
 import { Typewriter } from "react-simple-typewriter";
-import manoj_image from "../../assests/manoj.png";
+import manoj_image from "../../assests/mk.png";
 import { IconWrapper } from "../footer/subcomponents";
 
 const Home = (): ReactElement => {

@@ -117,10 +117,12 @@ export const ImageWrapper = styled.div`
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  position: relative;
+  margin-top: 50px;
+  margin-left: 70px;
+  position: relative; 
   top: -60px;
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
 `;
 
 export const Image = styled.img`
