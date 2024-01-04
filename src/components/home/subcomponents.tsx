@@ -1,6 +1,5 @@
 import { Col, Row } from "react-bootstrap";
-import styled from "styled-components";
-import home_1 from "../../assests/home_1.jpg";
+import styled from "styled-components"; 
 import { FontProsp, WrapperProsp } from "./types";
 
 export const PageWrapper = styled.div`
@@ -42,10 +41,7 @@ export const Navbar = styled.header`
 `;
 
 export const HomeContainer = styled.section`
-  background-image: url(${home_1});
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
+  background: rgb(15 23 42 / 1);
   height: 100vh;
   padding-top: 80px;
 `;
@@ -111,15 +107,15 @@ export const Subtitles = styled.p<FontProsp>`
   text-align: ${({ textAlign }) => (textAlign ? textAlign : null)};
 `;
 
-export const ImageWrapper = styled.div`
+export const ImageWrapper = styled.div<{ left?: string }>`
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin: 0 auto;
   margin-top: 50px;
-  margin-left: 70px;
-  position: relative; 
+  margin-left: ${({ left }) => (left ? left : "70px")};
+  position: relative;
   top: -60px;
   width: 450px;
   height: 450px;

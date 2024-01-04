@@ -1,7 +1,6 @@
 import React, { ReactElement } from "react";
 import {
   HomeContainer,
-  Navbar,
   HomeWrapper,
   Rowwrapper,
   Colwrapper,
@@ -13,25 +12,12 @@ import {
   Image,
 } from "./subcomponents";
 import { Typewriter } from "react-simple-typewriter";
-import manoj_image from "../../assests/mk.png";
+import manoj_image from "../../assests/home_manoj_1.png";
 import { IconWrapper } from "../footer/subcomponents";
 
 const Home = (): ReactElement => {
   return (
     <PageWrapper>
-      <Navbar>
-        <ul>
-          <li>
-            <span>Home</span>
-          </li>
-          <li>
-            <span>About</span>
-          </li>
-          <li>
-            <span>Project</span>
-          </li>
-        </ul>
-      </Navbar>
       <HomeContainer>
         <HomeWrapper>
           <Rowwrapper>
@@ -70,7 +56,9 @@ const Home = (): ReactElement => {
                   I’m a software developer with two years of hands-on experience
                   in creating dynamic and innovative web applications. My
                   passion for technology is coupled with a strong foundation in
-                  both front-end and back-end development.
+                  both <span style={{ color: "white" }}>front-end</span> and{" "}
+                  <span style={{ color: "white" }}>back-end </span>
+                  development.
                 </Subtitles>{" "}
                 <IconWrapper className="mt-4">
                   <i
@@ -89,6 +77,13 @@ const Home = (): ReactElement => {
                   ></i>
                   <i className="bx bxl-instagram"></i>
                   <i className="bx bxl-twitter"></i>
+                  <i
+                    className="bx bxl-gmail"
+                    onClick={() => {
+                      window.location.href =
+                        'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=manojkumar.sekar2000@gmail.com"';
+                    }}
+                  ></i>
                 </IconWrapper>
               </TitleWrapper>
             </Colwrapper>

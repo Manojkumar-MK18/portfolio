@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-import { Home, Footer } from "./components";
+import { Home, Footer, About, Header } from "./components";
+import { Route, Routes } from "react-router"; 
 
 export const GlobalStyle = createGlobalStyle`
 body{  
@@ -22,9 +23,13 @@ function App() {
   return (
     <>
       {/* <div className="cursor"></div> */}
-      <Home />
-      <Footer />
+      <Header />
       <GlobalStyle />
+      <Routes>
+        <Route path={"/"} element={<Home />} />
+        <Route path={"/about"} element={<About />} />
+      </Routes>
+      <Footer />
     </>
   );
 }

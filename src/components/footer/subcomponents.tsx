@@ -2,9 +2,12 @@ import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
   padding: 1% 7%;
-  background-color: #02050a;
+  background: rgb(15 23 42 / 1);
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 `;
 
 export const Words = styled.span`
