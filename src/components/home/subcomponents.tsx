@@ -1,5 +1,5 @@
 import { Col, Row } from "react-bootstrap";
-import styled from "styled-components"; 
+import styled from "styled-components";
 import { FontProsp, WrapperProsp } from "./types";
 
 export const PageWrapper = styled.div`
@@ -12,7 +12,7 @@ export const Navbar = styled.header`
   position: fixed;
   background: radial-gradient(500px at 1050px 250px, #202d41, transparent 90%);
   height: 70px;
-  width: 100%;
+  width: 100%;font-family: 'Inter', sans-serif; 
   display: flex;
   align-items: center;
   text-align: center;
@@ -40,9 +40,9 @@ export const Navbar = styled.header`
   }
 `;
 
-export const HomeContainer = styled.section`
+export const HomeContainer = styled.section<{ height?: string }>`
   background: rgb(15 23 42 / 1);
-  height: 100vh;
+  height: ${({ height }) => (height ? height : "100vh")};
   padding-top: 80px;
 `;
 
@@ -60,7 +60,18 @@ export const Rowwrapper = styled(Row)`
   max-width: 1500px;
 `;
 
-export const Colwrapper = styled(Col)``;
+export const Colwrapper = styled(Col)`
+  .skills {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    span {
+      padding: 5px 70px 6px 0;
+      color: white;
+      font-size: 13px;
+    }
+  }
+`;
 
 export const TitleWrapper = styled.div<WrapperProsp>`
   margin: ${({ margin }) => (margin ? margin : "20px 0")};

@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router";
 
 export const GlobalStyle = createGlobalStyle`
 body{  
-  font-family: 'Inter', sans-serif;  
+  font-family: 'Inter', sans-serif;  font-family: 'Fira Code', monospace;
 }
  
 `;
