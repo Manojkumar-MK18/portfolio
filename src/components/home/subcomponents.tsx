@@ -12,7 +12,8 @@ export const Navbar = styled.header`
   position: fixed;
   background: radial-gradient(500px at 1050px 250px, #202d41, transparent 90%);
   height: 70px;
-  width: 100%;font-family: 'Inter', sans-serif; 
+  width: 100%;
+  font-family: "Inter", sans-serif;
   display: flex;
   align-items: center;
   text-align: center;
@@ -65,10 +66,20 @@ export const Colwrapper = styled(Col)`
     display: flex;
     justify-content: start;
     flex-direction: column;
+    position: relative;
     span {
       padding: 5px 70px 6px 0;
       color: white;
+      position: relative;
       font-size: 13px;
+      &::before {
+        content: "▹";
+        position: relative;
+        color: rgb(148 163 184/1);
+        margin-right: 10px;
+        font-size: 14px;
+        line-height: 12px;
+      }
     }
   }
 `;

@@ -24,7 +24,7 @@ export const IconWrapper = styled.div`
     color: white;
     cursor: pointer;
     transition: all 0.4s;
-    color: rgb(148 163 184/1);
+    color: rgb(148 163 184/1); 
     &:hover {
       color: white;
       transform: translateY(-3px);

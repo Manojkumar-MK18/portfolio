@@ -16,7 +16,7 @@ import manoj_image from "../../assests/home_manoj_2.png";
 const About = (): ReactElement => {
   return (
     <PageWrapper>
-      <HomeContainer height="120vh">
+      <HomeContainer height="100vh">
         <HomeWrapper>
           <Rowwrapper>
             <Colwrapper lg={4} xl={5}>
@@ -25,7 +25,7 @@ const About = (): ReactElement => {
               </ImageWrapper>
             </Colwrapper>
             <Colwrapper lg={8} xl={6}>
-              <TitleWrapper paddingLeft="3rem" style={{ marginTop: "70px" }}>
+              <TitleWrapper paddingLeft="3rem" style={{ marginTop: "45px" }}>
                 <Subtitles
                   color="rgb(148 163 184/1)"
                   lineHeight="1.800"
@@ -41,15 +41,9 @@ const About = (): ReactElement => {
                   <br />
                   <br />
                   Whenever I have time, I am eager to develop my skills in {""}
-                  <span style={{ color: "white" }}>
-                    HTML, CSS, Javascript, Typescript, Javascript libraries like
-                    Reactjs, Angularjs, Redux, Redux toolkit, Nodejs, Expressjs
-                    and AWS.
-                  </span>
-                  <br />
-                  <br />
-                  When I’m not at the computer, I’m usually hanging out with
-                  Family and Friends or watching movies.
+                  New things. When I’m not at the computer, I’m usually hanging
+                  out with Spending time with family and friends, or watching
+                  movies.
                 </Subtitles>{" "}
                 <Title
                   color="rgb(148 163 184/1)"
@@ -80,7 +74,7 @@ const About = (): ReactElement => {
                     <span>Redux</span>
                     <span>Node.js</span>
                     <span>Express.js</span>
-                  </div>  
+                  </div>
                 </Subtitles>
               </TitleWrapper>
             </Colwrapper>
