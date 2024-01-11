@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { Home, Footer, About, Header } from "./components";
+import { Home, Footer, About, Header, Project } from "./components";
 import { Route, Routes } from "react-router"; 
 
 export const GlobalStyle = createGlobalStyle`
@@ -28,6 +28,7 @@ function App() {
       <Routes>
         <Route path={"/"} element={<Home />} />
         <Route path={"/about"} element={<About />} />
+        <Route path={"/project"} element={<Project />} />
       </Routes>
       <Footer />
     </>

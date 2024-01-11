@@ -16,7 +16,7 @@ import manoj_image from "../../assests/home_manoj_2.png";
 const About = (): ReactElement => {
   return (
     <PageWrapper>
-      <HomeContainer height="100vh">
+      <HomeContainer height="100vh"> 
         <HomeWrapper>
           <Rowwrapper>
             <Colwrapper lg={4} xl={5}>

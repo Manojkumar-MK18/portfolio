@@ -21,7 +21,9 @@ const Header = () => {
         >
           <span>About</span>
         </li>
-        <li>
+        <li onClick={() => {
+          navigate('/project')
+        }}>
           <span>Project</span>
         </li>
       </ul>
