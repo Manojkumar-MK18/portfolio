@@ -16,6 +16,7 @@ import manoj_image from "../../assests/home_manoj_1.png";
 import { IconWrapper } from "../footer/subcomponents";
 
 const Home = (): ReactElement => {
+  console.log(navigator)
   return (
     <PageWrapper>
       <HomeContainer>

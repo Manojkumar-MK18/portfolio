@@ -1,13 +1,29 @@
 import React, { ReactElement } from "react";
-import { CardWrapper, ImageWrapper, TextWrappper } from "./subcomponents";
+import {
+  CardWrapper,
+  HiglihWrapper,
+  ImageWrapper,
+  TextWrappper,
+} from "./subcomponents";
 import { Subtitles, Title } from "../home/subcomponents";
-import project_1 from "../../assests/p_1.png";
 
-const ProjectCard = (): ReactElement => {
+interface ProjectProsp {
+  name: string;
+  description: string;
+  img: string;
+  skills: string[];
+}
+
+const ProjectCard = ({
+  name,
+  description,
+  img,
+  skills,
+}: ProjectProsp): ReactElement => {
   return (
     <CardWrapper>
       <ImageWrapper>
-        <img src={project_1} alt="" />
+        <img src={img} alt="project_image" />
       </ImageWrapper>
       <TextWrappper>
         <Title
@@ -17,7 +33,7 @@ const ProjectCard = (): ReactElement => {
           lineHeight="1.25"
           fontWeight={500}
         >
-          E-commerce
+          {name}
         </Title>
         <Subtitles
           font=".875rem"
@@ -26,10 +42,14 @@ const ProjectCard = (): ReactElement => {
           lineHeight="1.5"
           fontWeight={500}
         >
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non sequi
-          ipsam aspernatur doloremque accusantium repudiandae est, a,
-          blanditiis, quo architecto.
+          {description}
         </Subtitles>
+        <div style={{ display: "flex" }}>
+          {skills?.map((skill, index) => {
+            return <HiglihWrapper key={index}>{skill}</HiglihWrapper>;
+          })}
+           
+        </div>
       </TextWrappper>
     </CardWrapper>
   );

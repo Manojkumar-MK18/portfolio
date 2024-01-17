@@ -42,7 +42,7 @@ const About = (): ReactElement => {
                   <br />
                   Whenever I have time, I am eager to develop my skills in {""}
                   New things. When I’m not at the computer, I’m usually hanging
-                  out with Spending time with family and friends, or watching
+                  out with my family and friends, or watching
                   movies.
                 </Subtitles>{" "}
                 <Title

@@ -91,7 +91,7 @@ export const TitleWrapper = styled.div<WrapperProsp>`
   flex-direction: column;
   align-items: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "center")};
   text-align: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "center")};
-  padding-left: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : null)};
+  padding-left: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : null)}; 
 `;
 
 export const Title = styled.h1<FontProsp>`
@@ -141,6 +141,9 @@ export const ImageWrapper = styled.div<{ left?: string }>`
   top: -60px;
   width: 450px;
   height: 450px;
+  @media (max-width:450px) {
+    display: none;
+  }
 `;
 
 export const Image = styled.img`
