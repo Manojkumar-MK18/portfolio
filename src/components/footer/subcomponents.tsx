@@ -19,7 +19,7 @@ export const Words = styled.span`
 
 export const IconWrapper = styled.div`
   i {
-    padding: 0 30px 0 0;
+    padding: 0 25px 0 0;
     font-size: 25px;
     color: white;
     cursor: pointer;

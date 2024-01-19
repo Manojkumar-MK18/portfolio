@@ -4,13 +4,13 @@ import styled from "styled-components";
 export const CardWrapper = styled(Card)`
   display: flex;
   flex-direction: row;
-  width: 500px;
+  width: 600px;
   padding: 10px;
   cursor: pointer;
   background: transparent;
   color: white;
   border: none;
-  margin: 10px 0;
+  margin: 10px 0; 
   transition: all 0.5s;
   &:hover {
     transition: all 0.5s;
@@ -39,16 +39,16 @@ export const ImageWrapper = styled.div`
 `;
 
 export const TextWrappper = styled.div`
-  width: 350px;
+  width: 450px;
   position: relative;
   left: 10px;
 `;
 
 export const HiglihWrapper = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  font-size: 0.75rem;
-  padding: 0.25rem 0.75rem;
+  flex-wrap: nowrap;
+  font-size: 0.70rem;
+  padding: 0.25rem 0.60rem;
   font-weight: 500;
   background-color: rgba(45, 212, 191, 0.1);
   border-radius: 9999px;
@@ -63,6 +63,9 @@ export const ProfileCardContainer = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  position: relative;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 20px;
   min-width: 100%;
-  overflow: auto;
 `;

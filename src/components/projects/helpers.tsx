@@ -44,7 +44,7 @@ const ProjectCard = ({
         >
           {description}
         </Subtitles>
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex" ,width:'100%'}}>
           {skills?.map((skill, index) => {
             return <HiglihWrapper key={index}>{skill}</HiglihWrapper>;
           })}

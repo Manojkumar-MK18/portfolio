@@ -16,7 +16,7 @@ import manoj_image from "../../assests/home_manoj_1.png";
 import { IconWrapper } from "../footer/subcomponents";
 
 const Home = (): ReactElement => {
-  console.log(navigator)
+  console.log(navigator);
   return (
     <PageWrapper>
       <HomeContainer>
@@ -70,26 +70,36 @@ const Home = (): ReactElement => {
                 <IconWrapper className="mt-4">
                   <i
                     className="bx bxl-linkedin"
+                    title="linkedin"
                     onClick={() => {
                       window.open(
                         "https://www.linkedin.com/in/manojkumar-s-27a084208/"
                       );
                     }}
-                  ></i>{" "}
+                  ></i>
                   <i
                     className="bx bxl-github"
+                    title="github"
                     onClick={() => {
                       window.open("https://github.com/Manojkumar-MK18");
                     }}
                   ></i>
-                  <i className="bx bxl-instagram"></i>
-                  <i className="bx bxl-twitter"></i>
+                  <i className="bx bxl-instagram" title="instagram"></i>
+                  <i className="bx bxl-twitter" title="twitter"></i>
                   <i
+                    title="gmail"
                     className="bx bxl-gmail"
                     onClick={() => {
                       window.location.href =
                         'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=manojkumar.sekar2000@gmail.com"';
                     }}
+                  ></i>
+                  <i
+                    onClick={() => {
+                      window.location.href = `https://wa.me/8825781506`;
+                    }}
+                    title="whatsapp"
+                    className="bx bxl-whatsapp"
                   ></i>
                 </IconWrapper>
               </TitleWrapper>
