@@ -39,14 +39,7 @@ const Project = (): ReactElement => {
                         description={data?.description}
                         img={data?.img}
                         skills={data?.skills}
-                      />
-                      <ProjectCard
-                        key={index}
-                        name={data?.name}
-                        description={data?.description}
-                        img={data?.img}
-                        skills={data?.skills}
-                      />
+                      /> 
                     </>
                   );
                 })}

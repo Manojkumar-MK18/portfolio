@@ -1,20 +1,37 @@
-import project_1 from "../../assests/p_1.png";
+import ecommerce from "../../assests/projects/ecommerce.png";
+import antas from '../../assests/projects/antas.png'
 
 export const ProjectData = [
   {
     id: "01",
-    name: "LMS(Learning Management System)",
-    img: project_1,
+    name: "LMS(Learning management system)",
+    img: ecommerce,
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non sequi ipsam aspernatur doloremque accusantium repudiandae est, a, blanditiis, quo architecto.",
-    skills: ["JS", "TS", "React", "Styled Components", "Redux-toolkit","AWS"],
+    skills: ["TS", "React", "Styled Components", "Redux-toolkit", "AWS"],
+  },
+  {
+    id: "02",
+    name: "ERP(Enterprise resource planning)",
+    img: ecommerce,
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non sequi ipsam aspernatur doloremque accusantium repudiandae est, a, blanditiis, quo architecto.",
+    skills: ["TS", "React", "Styled Components", "Redux-toolkit", "AWS"],
+  },
+  {
+    id: "03",
+    name: "Antas",
+    img: antas,
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non sequi ipsam aspernatur doloremque accusantium repudiandae est, a, blanditiis, quo architecto.",
+    skills: ["TS", "React", "Styled Components", "Redux-toolkit", "AWS"],
   },
   {
     id: "02",
     name: "E-commerce",
-    img: project_1,
+    img: ecommerce,
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non sequi ipsam aspernatur doloremque accusantium repudiandae est, a, blanditiis, quo architecto.",
-    skills: ["JS", "TS", "AngularJs", "CSS", "Swagger API"],
+    skills: ["TS", "Angular", "CSS", "Swagger API"],
   },
 ];
