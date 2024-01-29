@@ -71,7 +71,7 @@ export const Colwrapper = styled(Col)`
       padding: 5px 70px 6px 0;
       color: white;
       position: relative;
-      font-size: 13px;
+      font-size: 13px;   
       &::before {
         content: "▹";
         position: relative;
@@ -91,7 +91,12 @@ export const TitleWrapper = styled.div<WrapperProsp>`
   flex-direction: column;
   align-items: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "center")};
   text-align: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "center")};
-  padding-left: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : null)}; 
+  padding-left: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : null)};
+  @media (max-width: 450px) {
+    padding-left: 0;
+    text-align: center;
+    align-items: center;
+  }
 `;
 
 export const Title = styled.h1<FontProsp>`
@@ -141,7 +146,7 @@ export const ImageWrapper = styled.div<{ left?: string }>`
   top: -60px;
   width: 450px;
   height: 450px;
-  @media (max-width:450px) {
+  @media (max-width: 450px) {
     display: none;
   }
 `;

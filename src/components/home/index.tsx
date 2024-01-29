@@ -16,24 +16,24 @@ import manoj_image from "../../assests/home_manoj_1.png";
 import { IconWrapper } from "../footer/subcomponents";
 
 const Home = (): ReactElement => {
-  console.log(navigator);
+  var query450 = window.matchMedia("(max-width: 450px)");
   return (
     <PageWrapper>
-      <HomeContainer>
+      <HomeContainer height={query450?.matches ? "90vh" : ""}>
         <HomeWrapper>
           <Rowwrapper>
             <Colwrapper lg={8} xl={6}>
               <TitleWrapper paddingLeft="3rem" style={{ marginTop: "70px" }}>
                 <Title
                   color="rgb(226 232 240/1)"
-                  font="50px"
+                  font={query450?.matches ? "1.4.999rem" : "50px"}
                   fontFamily="'Inter', sans-serif"
                 >
                   Manojkumar S
                 </Title>
                 <Title
                   color="rgb(226 232 240/1)"
-                  font="1.5rem"
+                  font={query450?.matches ? "1.2rem" : "1.5rem"}
                   className="mt-2"
                   fontFamily="'Inter', sans-serif"
                 >
@@ -96,7 +96,7 @@ const Home = (): ReactElement => {
                   ></i>
                   <i
                     onClick={() => {
-                      window.location.href = `https://wa.me/8825781506`;
+                      window.location.href = `https://wa.me/+918825781506`;
                     }}
                     title="whatsapp"
                     className="bx bxl-whatsapp"
