@@ -90,13 +90,14 @@ const Home = (): ReactElement => {
                     title="gmail"
                     className="bx bxl-gmail"
                     onClick={() => {
-                      window.location.href =
-                        'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=manojkumar.sekar2000@gmail.com"';
+                      window.open(
+                        "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=manojkumar.sekar2000@gmail.com"
+                      );
                     }}
                   ></i>
                   <i
                     onClick={() => {
-                      window.location.href = `https://wa.me/+918825781506`;
+                      window.open("https://wa.me/+918825781506");
                     }}
                     title="whatsapp"
                     className="bx bxl-whatsapp"

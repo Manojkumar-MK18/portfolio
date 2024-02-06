@@ -24,7 +24,7 @@ export const ProjectData = [
     img: antas,
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non sequi ipsam aspernatur doloremque accusantium repudiandae est, a, blanditiis, quo architecto.",
-    skills: ["TS", "React", "Styled Components", "Redux-toolkit", "AWS"],
+    skills: ["TS", "React", "Styled Components", "Redux-toolkit"],
   },
   {
     id: "02",
