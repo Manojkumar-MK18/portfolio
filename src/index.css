@@ -4,24 +4,36 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.cursor {
-    z-index: 999;
-    background: #2696E8;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    pointer-events: none;
-    position: fixed;
-    box-shadow: 0 0 20px#2696E8 0 0 60px#2696E8 0 0 100px#2696E8;
+.loader {
+    display: flex;
+    align-items: center;
 }
 
-.cursor::before {
-    content: '';
-    position: absolute;
-    background: #2696E8;
-    width: 50px;
+.bar {
+    display: inline-block;
+    width: 5px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    animation: scale-up4 1s linear infinite;
+}
+
+.bar:nth-child(2) {
     height: 50px;
-    opacity: 0.2;
-    transform: translate(-30%, -30%);
-    border-radius: 50%;
+    margin: 0 10px;
+    animation-delay: .25s;
+}
+
+.bar:nth-child(3) {
+    animation-delay: .5s;
+}
+
+@keyframes scale-up4 {
+    20% {
+        background-color: #ffff;
+        transform: scaleY(1.5);
+    }
+    40% {
+        transform: scaleY(1);
+    }
 }

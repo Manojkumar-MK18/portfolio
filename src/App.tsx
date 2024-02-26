@@ -1,6 +1,7 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import { Home, Footer, About, Header, Project } from "./components";
-import { Route, Routes } from "react-router"; 
+import { Route, Routes } from "react-router";
+import { useEffect, useState } from "react";
 
 export const GlobalStyle = createGlobalStyle`
 body{  
@@ -9,28 +10,47 @@ body{
  
 `;
 
-// const cursor: any = document.querySelector(".cursor");
-
-// document.addEventListener("mousemove", (e) => {
-//   let x = e.pageX;
-//   let y = e.pageY;
-
-//   cursor.style.top = `${y}px`;
-//   cursor.style.left = `${x}px`;
-// });
+export const LoaderWrapper = styled.div`
+  background: rgb(15 23 42 / 1);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+`;
 
 function App() {
+  const [loadTimer, setLoadTimer] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoadTimer(true);
+    }, 2000);
+  });
+
   return (
     <>
-      {/* <div className="cursor"></div> */}
-      <Header />
-      <GlobalStyle />
-      <Routes>
-        <Route path={"/"} element={<Home />} />
-        <Route path={"/about"} element={<About />} />
-        <Route path={"/project"} element={<Project />} />
-      </Routes>
-      <Footer />
+      {!loadTimer ? (
+        <LoaderWrapper>
+          <div className="loader">
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </div>
+        </LoaderWrapper>
+      ) : (
+        <>
+          <Header />
+          <GlobalStyle />
+          <Routes>
+            <Route path={"/"} element={<Home />} />
+            <Route path={"/about"} element={<About />} />
+            <Route path={"/project"} element={<Project />} />
+          </Routes>
+          <Footer />
+        </>
+      )}
     </>
   );
 }
