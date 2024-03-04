@@ -84,7 +84,13 @@ const Home = (): ReactElement => {
                       window.open("https://github.com/Manojkumar-MK18");
                     }}
                   ></i>
-                  <i className="bx bxl-instagram" title="instagram"></i>
+                  <i
+                    className="bx bxl-instagram"
+                    title="instagram"
+                    onClick={() => {
+                      window.open("https://www.instagram.com/s_mk_manoj/");
+                    }}
+                  ></i>
                   <i className="bx bxl-twitter" title="twitter"></i>
                   <i
                     title="gmail"

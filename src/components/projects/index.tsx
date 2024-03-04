@@ -15,7 +15,7 @@ import { ProjectData } from "./const";
 const Project = (): ReactElement => {
   return (
     <PageWrapper>
-      <HomeContainer>
+      <HomeContainer height="auto">
         <HomeWrapper>
           <TitleWrapper>
             <Title
@@ -27,7 +27,7 @@ const Project = (): ReactElement => {
               Here is a list of the projects I've recently worked on.
             </Title>
           </TitleWrapper>
-          <Rowwrapper>
+          <Rowwrapper noMargin>
             <Colwrapper>
               <ProfileCardContainer>
                 {ProjectData?.map((data, index) => {
@@ -39,7 +39,7 @@ const Project = (): ReactElement => {
                         description={data?.description}
                         img={data?.img}
                         skills={data?.skills}
-                      /> 
+                      />
                     </>
                   );
                 })}

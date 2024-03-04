@@ -6,6 +6,8 @@ export const PageWrapper = styled.div`
   box-sizing: border-box;
   width: 100%;
   overflow: hidden !important;
+  position: relative;
+  z-index: 1;
 `;
 
 export const Navbar = styled.header`
@@ -18,7 +20,7 @@ export const Navbar = styled.header`
   align-items: center;
   text-align: center;
   justify-content: end;
-
+  z-index: 111;
   ul {
     margin-right: 80px;
     margin-top: 15px;
@@ -71,7 +73,7 @@ export const Colwrapper = styled(Col)`
       padding: 5px 70px 6px 0;
       color: white;
       position: relative;
-      font-size: 13px;   
+      font-size: 13px;
       &::before {
         content: "▹";
         position: relative;
