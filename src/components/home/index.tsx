@@ -19,7 +19,7 @@ const Home = (): ReactElement => {
   var query450 = window.matchMedia("(max-width: 550px)");
   return (
     <PageWrapper>
-      <HomeContainer height={query450?.matches ? "90vh" : ""}>
+      <HomeContainer height={query450?.matches ? "80vh" : ""}>
         <HomeWrapper>
           <Rowwrapper>
             <Colwrapper lg={8} xl={6}>
