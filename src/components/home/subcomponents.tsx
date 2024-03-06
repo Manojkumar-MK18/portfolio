@@ -161,7 +161,7 @@ export const ImageWrapper = styled.div<{ left?: string; display?: string }>`
     display: ${({ display }) => (display ? display : null)};
     width: 450px;
     height: 450px;
-    margin-left: -10px;
+    margin-left: -5%;
   }
 `;
 
