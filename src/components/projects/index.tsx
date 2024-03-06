@@ -12,11 +12,10 @@ import ProjectCard from "./helpers";
 import { ProfileCardContainer } from "./subcomponents";
 import { ProjectData } from "./const";
 
-const Project = (): ReactElement => {
-  var query450 = window.matchMedia("(max-width: 550px)");
+const Project = (): ReactElement => { 
   return (
     <PageWrapper>
-      <HomeContainer height={query450 && "100%"}>
+      <HomeContainer mobileHeight="100%">
         <HomeWrapper>
           <TitleWrapper>
             <Title

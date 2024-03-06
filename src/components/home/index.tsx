@@ -19,9 +19,9 @@ const Home = (): ReactElement => {
   var query450 = window.matchMedia("(max-width: 550px)");
   return (
     <PageWrapper>
-      <HomeContainer>
+      <HomeContainer mobileHeight='100%'>
         <HomeWrapper>
-          <Rowwrapper>
+          <Rowwrapper noMargin>
             <Colwrapper lg={8} xl={6}>
               <TitleWrapper paddingLeft="3rem" style={{ marginTop: "70px" }}>
                 <Title

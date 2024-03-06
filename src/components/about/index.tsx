@@ -21,7 +21,7 @@ const About = (): ReactElement => {
         <HomeWrapper>
           <Rowwrapper>
             <Colwrapper lg={4} xl={5}>
-              <ImageWrapper left="30px">
+              <ImageWrapper left="30px" display='none'>
                 <Image src={manoj_image} alt="" />
               </ImageWrapper>
             </Colwrapper>

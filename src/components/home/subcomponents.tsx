@@ -44,12 +44,18 @@ export const Navbar = styled.header`
   }
 `;
 
-export const HomeContainer = styled.section<{ height?: string }>`
+export const HomeContainer = styled.section<{
+  height?: string;
+  mobileHeight?: string;
+}>`
   background: rgb(15 23 42 / 1);
   width: 100%;
   height: ${({ height }) => (height ? height : "100vh")};
   max-height: 100%;
   padding-top: 80px;
+  @media (max-width: 550px) {
+    height: ${({ mobileHeight }) => (mobileHeight ? mobileHeight : "100vh")};
+  }
 `;
 
 export const HomeWrapper = styled.div`
@@ -139,7 +145,7 @@ export const Subtitles = styled.p<FontProsp>`
   text-align: ${({ textAlign }) => (textAlign ? textAlign : null)};
 `;
 
-export const ImageWrapper = styled.div<{ left?: string }>`
+export const ImageWrapper = styled.div<{ left?: string; display?: string }>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,8 +157,11 @@ export const ImageWrapper = styled.div<{ left?: string }>`
   top: -60px;
   width: 550px;
   height: 550px;
-  @media (max-width: 550px) {
-    display: none;
+  @media (max-width: 450px) {
+    display: ${({ display }) => (display ? display : null)};
+    width: 450px;
+    height: 450px;
+    margin-left: -10px;
   }
 `;
 
