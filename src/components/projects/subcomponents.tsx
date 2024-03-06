@@ -10,7 +10,10 @@ export const CardWrapper = styled(Card)`
   background: transparent;
   color: white;
   border: none;
-  margin: 10px 0; 
+  margin: 10px auto;
+  position: relative;
+  left: 2%;
+  justify-content: center;
   transition: all 0.5s;
   &:hover {
     transition: all 0.5s;
@@ -47,8 +50,8 @@ export const TextWrappper = styled.div`
 export const HiglihWrapper = styled.div`
   display: flex;
   flex-wrap: nowrap;
-  font-size: 0.70rem;
-  padding: 0.25rem 0.60rem;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.6rem;
   font-weight: 500;
   background-color: rgba(45, 212, 191, 0.1);
   border-radius: 9999px;
@@ -56,6 +59,10 @@ export const HiglihWrapper = styled.div`
   line-height: 1.25rem;
   margin-top: 0.5rem;
   margin-right: 0.375rem;
+  @media (max-width: 550px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 `;
 
 export const ProfileCardContainer = styled.div`
@@ -66,6 +73,5 @@ export const ProfileCardContainer = styled.div`
   position: relative;
   justify-content: center;
   margin: 0 auto;
-  gap: 20px;
   min-width: 100%;
 `;

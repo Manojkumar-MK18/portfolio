@@ -13,9 +13,10 @@ import { ProfileCardContainer } from "./subcomponents";
 import { ProjectData } from "./const";
 
 const Project = (): ReactElement => {
+  var query450 = window.matchMedia("(max-width: 550px)");
   return (
     <PageWrapper>
-      <HomeContainer height="auto">
+      <HomeContainer height={query450 && "100%"}>
         <HomeWrapper>
           <TitleWrapper>
             <Title
@@ -32,15 +33,13 @@ const Project = (): ReactElement => {
               <ProfileCardContainer>
                 {ProjectData?.map((data, index) => {
                   return (
-                    <>
-                      <ProjectCard
-                        key={index}
-                        name={data?.name}
-                        description={data?.description}
-                        img={data?.img}
-                        skills={data?.skills}
-                      />
-                    </>
+                    <ProjectCard
+                      key={index}
+                      name={data?.name}
+                      description={data?.description}
+                      img={data?.img}
+                      skills={data?.skills}
+                    />
                   );
                 })}
               </ProfileCardContainer>

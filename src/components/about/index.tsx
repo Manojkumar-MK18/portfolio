@@ -14,9 +14,10 @@ import {
 import manoj_image from "../../assests/home_manoj_2.png";
 
 const About = (): ReactElement => {
+  var query450 = window.matchMedia("(max-width: 550px)");
   return (
     <PageWrapper>
-      <HomeContainer height="100vh"> 
+      <HomeContainer height={query450 ? "110vh" : "100vh"}>
         <HomeWrapper>
           <Rowwrapper>
             <Colwrapper lg={4} xl={5}>
@@ -42,8 +43,7 @@ const About = (): ReactElement => {
                   <br />
                   Whenever I have time, I am eager to develop my skills in {""}
                   New things. When I’m not at the computer, I’m usually hanging
-                  out with my family and friends, or watching
-                  movies.
+                  out with my family and friends, or watching movies.
                 </Subtitles>{" "}
                 <Title
                   color="rgb(148 163 184/1)"

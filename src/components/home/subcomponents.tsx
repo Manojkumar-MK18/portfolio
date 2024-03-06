@@ -6,8 +6,6 @@ export const PageWrapper = styled.div`
   box-sizing: border-box;
   width: 100%;
   overflow: hidden !important;
-  position: relative;
-  z-index: 1;
 `;
 
 export const Navbar = styled.header`
@@ -48,7 +46,9 @@ export const Navbar = styled.header`
 
 export const HomeContainer = styled.section<{ height?: string }>`
   background: rgb(15 23 42 / 1);
+  width: 100%;
   height: ${({ height }) => (height ? height : "100vh")};
+  max-height: 100%;
   padding-top: 80px;
 `;
 

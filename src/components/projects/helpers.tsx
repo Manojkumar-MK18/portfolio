@@ -44,11 +44,10 @@ const ProjectCard = ({
         >
           {description}
         </Subtitles>
-        <div style={{ display: "flex" ,width:'100%'}}>
+        <div style={{ display: "flex", width: "100%", flexWrap: "wrap" }}>
           {skills?.map((skill, index) => {
             return <HiglihWrapper key={index}>{skill}</HiglihWrapper>;
           })}
-           
         </div>
       </TextWrappper>
     </CardWrapper>
