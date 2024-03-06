@@ -1,4 +1,4 @@
-import { Col, Row } from "react-bootstrap";
+import { Col, Offcanvas, Row } from "react-bootstrap";
 import styled from "styled-components";
 import { FontProsp, WrapperProsp } from "./types";
 
@@ -24,6 +24,9 @@ export const Navbar = styled.header`
   ul {
     margin-right: 80px;
     margin-top: 15px;
+    @media (max-width: 550px) {
+      display: none;
+    }
   }
   li {
     color: #fff;
@@ -94,7 +97,7 @@ export const TitleWrapper = styled.div<WrapperProsp>`
   align-items: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "center")};
   text-align: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "center")};
   padding-left: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : null)};
-  @media (max-width: 450px) {
+  @media (max-width: 550px) {
     padding-left: 0;
     text-align: center;
     align-items: center;
@@ -146,9 +149,9 @@ export const ImageWrapper = styled.div<{ left?: string }>`
   margin-left: ${({ left }) => (left ? left : "70px")};
   position: relative;
   top: -60px;
-  width: 450px;
-  height: 450px;
-  @media (max-width: 450px) {
+  width: 550px;
+  height: 550px;
+  @media (max-width: 550px) {
     display: none;
   }
 `;
@@ -157,4 +160,46 @@ export const Image = styled.img`
   object-fit: contain;
   width: 100%;
   height: 100%;
+`;
+
+export const HamburgerIcon = styled.i`
+  color: white;
+  padding: 10px;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  @media (min-width: 550px) {
+    display: none;
+  }
+`;
+
+export const OffCanvaWrappper = styled.div`
+  @media (min-width: 550px) {
+    display: none;
+  }
+`;
+
+export const OffCanvaContainer = styled(Offcanvas)`
+  background-color: rgb(15 21 42 / 1);
+  color: white;
+  min-height: 45%;
+  .offcanvas-header .btn-close {
+    color: #fff;
+    filter: brightness(0) invert(1);
+  }
+
+  ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  li {
+    padding: 10px 0;
+  }
 `;

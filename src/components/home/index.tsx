@@ -16,7 +16,7 @@ import manoj_image from "../../assests/home_manoj_1.png";
 import { IconWrapper } from "../footer/subcomponents";
 
 const Home = (): ReactElement => {
-  var query450 = window.matchMedia("(max-width: 450px)");
+  var query450 = window.matchMedia("(max-width: 550px)");
   return (
     <PageWrapper>
       <HomeContainer height={query450?.matches ? "90vh" : ""}>
