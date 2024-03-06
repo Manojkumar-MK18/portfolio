@@ -70,6 +70,10 @@ export const Rowwrapper = styled(Row)`
   margin: ${({ noMargin }) => (noMargin ? null : "1%")};
   padding: ${({ padding }) => (padding ? padding : "1%")};
   max-width: 1500px;
+  @media (max-width: 550px) {
+    max-width: auto;
+    width: auto;
+  }
 `;
 
 export const Colwrapper = styled(Col)`
@@ -157,11 +161,11 @@ export const ImageWrapper = styled.div<{ left?: string; display?: string }>`
   top: -60px;
   width: 550px;
   height: 550px;
-  @media (max-width: 450px) {
-    display: ${({ display }) => (display ? display : null)};
-    width: 450px;
-    height: 450px;
-    margin-left: -5%;
+  @media (max-width: 550px) {
+    display: ${({ display }) => (display ? display : "flex")};
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
   }
 `;
 
