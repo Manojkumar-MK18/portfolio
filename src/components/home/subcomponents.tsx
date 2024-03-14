@@ -42,6 +42,19 @@ export const Navbar = styled.header`
     color: #fff;
     list-style: none;
   }
+  .Mobile {
+    backdrop-filter: blur(15px) !important;
+    background-color: #1b1a2ea9 !important;
+    box-shadow: 0 10px 10px 0 rgba(9, 5, 29, 0.171) !important;
+    width: 100%;
+    position: relative;
+    top: -8px;
+    justify-content: end;
+    display: none;
+    @media (max-width: 550px) {
+      display: flex;
+    }
+  }
 `;
 
 export const HomeContainer = styled.section<{
@@ -53,7 +66,7 @@ export const HomeContainer = styled.section<{
   height: ${({ height }) => (height ? height : "100vh")};
   max-height: 100%;
   padding-top: 80px;
-  @media (max-width: 550px) {
+  @media (max-width: 750px) {
     height: ${({ mobileHeight }) => (mobileHeight ? mobileHeight : "100vh")};
   }
 `;

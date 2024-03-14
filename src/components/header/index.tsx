@@ -12,12 +12,14 @@ const Header = () => {
   const [showCanva, setShowCanva] = useState(false);
   return (
     <Navbar>
-      <HamburgerIcon
-        className="bx bx-menu"
-        onClick={() => {
-          setShowCanva(!showCanva);
-        }}
-      ></HamburgerIcon>
+      <div className='Mobile'>
+        <HamburgerIcon
+          className="bx bx-menu"
+          onClick={() => {
+            setShowCanva(!showCanva);
+          }}
+        />
+      </div>
       <OffCanvaWrappper>
         <OffCanvaContainer
           onHide={() => {

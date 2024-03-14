@@ -14,14 +14,15 @@ export const CardWrapper = styled(Card)`
   position: relative;
   left: 2%;
   justify-content: center;
-  transition: all 0.5s;
+  transition:  0.5s;
   &:hover {
-    transition: all 0.5s;
+    transition:  0.5s;
     background: linear-gradient(
       to left,
       rgba(255, 255, 255, 0.15),
       rgba(255, 255, 255, 0.15)
     );
+    transform: translateY(-10px);
   }
 `;
 
