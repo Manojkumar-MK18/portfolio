@@ -13,7 +13,7 @@ import {
 } from "./subcomponents";
 import { Typewriter } from "react-simple-typewriter";
 import manoj_image from "../../assests/home_manoj_1.png";
-import { IconWrapper } from "../footer/subcomponents";
+import { IconWrapper, Iicon } from "../footer/subcomponents";
 
 const Home = (): ReactElement => {
   var query450 = window.matchMedia("(max-width: 550px)");
@@ -29,7 +29,7 @@ const Home = (): ReactElement => {
                   font={query450?.matches ? "1.4.999rem" : "50px"}
                   fontFamily="'Inter', sans-serif"
                 >
-                  Manojkumar S
+                  I am Manojkumar
                 </Title>
                 <Title
                   color="rgb(226 232 240/1)"
@@ -68,46 +68,55 @@ const Home = (): ReactElement => {
                   development.
                 </Subtitles>{" "}
                 <IconWrapper className="mt-4">
-                  <i
+                  <Iicon
                     className="bx bxl-linkedin"
                     title="linkedin"
+                    hoverColor="#0a66c2"
                     onClick={() => {
                       window.open(
                         "https://www.linkedin.com/in/manojkumar-s-27a084208/"
                       );
                     }}
-                  ></i>
-                  <i
+                  ></Iicon>
+                  <Iicon
                     className="bx bxl-github"
                     title="github"
+                    hoverColor="black"
                     onClick={() => {
                       window.open("https://github.com/Manojkumar-MK18");
                     }}
-                  ></i>
-                  <i
+                  ></Iicon>
+                  <Iicon
                     className="bx bxl-instagram"
                     title="instagram"
+                    hoverColor="#bc2a8d"
                     onClick={() => {
                       window.open("https://www.instagram.com/s_mk_manoj/");
                     }}
-                  ></i>
-                  <i className="bx bxl-twitter" title="twitter"></i>
-                  <i
+                  ></Iicon>
+                  <Iicon
+                    className="bx bxl-twitter"
+                    title="twitter"
+                    hoverColor="#1DA1F2"
+                  ></Iicon>
+                  <Iicon
                     title="gmail"
+                    hoverColor="red"
                     className="bx bxl-gmail"
                     onClick={() => {
                       window.open(
                         "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=manojkumar.sekar2000@gmail.com"
                       );
                     }}
-                  ></i>
-                  <i
+                  ></Iicon>
+                  <Iicon
                     onClick={() => {
                       window.open("https://wa.me/+918825781506");
                     }}
                     title="whatsapp"
+                    hoverColor="green"
                     className="bx bxl-whatsapp"
-                  ></i>
+                  ></Iicon>
                 </IconWrapper>
               </TitleWrapper>
             </Colwrapper>
@@ -119,7 +128,6 @@ const Home = (): ReactElement => {
           </Rowwrapper>
         </HomeWrapper>
       </HomeContainer>{" "}
-      
     </PageWrapper>
   );
 };

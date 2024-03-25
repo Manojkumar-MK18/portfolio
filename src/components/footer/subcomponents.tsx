@@ -17,18 +17,18 @@ export const Words = styled.span`
   color: #a2a2a2;
 `;
 
-export const IconWrapper = styled.div`
-  i {
-    padding: 0 25px 0 0;
-    font-size: 25px;
-    color: white;
-    cursor: pointer;
+export const IconWrapper = styled.div``;
+
+export const Iicon = styled.i<{ hoverColor?: string }>`
+  padding: 0 25px 0 0;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.4s;
+  color: rgb(148 163 184/1);
+  &:hover {
+    color: ${({ hoverColor }) => (hoverColor ? hoverColor : "white")};
+    transform: translateY(-2px);
     transition: all 0.4s;
-    color: rgb(148 163 184/1); 
-    &:hover {
-      color: white;
-      transform: translateY(-3px);
-      transition: all 0.4s;
-    }
   }
 `;
