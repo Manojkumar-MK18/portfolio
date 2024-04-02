@@ -17,7 +17,15 @@ export const Words = styled.span`
   color: #a2a2a2;
 `;
 
-export const IconWrapper = styled.div``;
+export const IconWrapper = styled.div`
+  .icon_wrapper {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+`;
 
 export const Iicon = styled.i<{ hoverColor?: string }>`
   padding: 0 25px 0 0;
@@ -28,7 +36,9 @@ export const Iicon = styled.i<{ hoverColor?: string }>`
   color: rgb(148 163 184/1);
   &:hover {
     color: ${({ hoverColor }) => (hoverColor ? hoverColor : "white")};
-    transform: translateY(-2px);
     transition: all 0.4s;
+  }
+  @media (max-width: 650px) {
+    padding: 10px;
   }
 `;

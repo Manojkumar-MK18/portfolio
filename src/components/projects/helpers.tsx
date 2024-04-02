@@ -32,6 +32,7 @@ const ProjectCard = ({
           fontFamily="'Inter', sans-serif"
           lineHeight="1.25"
           fontWeight={500}
+          className="title"
         >
           {name}
         </Title>

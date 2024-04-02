@@ -117,8 +117,8 @@ export const TitleWrapper = styled.div<WrapperProsp>`
   display: flex;
   height: ${({ height }) => (height ? height : null)};
   flex-direction: column;
-  align-items: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "center")};
-  text-align: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "center")};
+  align-items: ${({ textAlign }) => (textAlign ? textAlign : "center")};
+  text-align: ${({ align }) => (align ? align : "center")};
   padding-left: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : null)};
   @media (max-width: 550px) {
     padding-left: 0;
@@ -186,6 +186,12 @@ export const Image = styled.img`
   object-fit: contain;
   width: 100%;
   height: 100%;
+  border-radius: 38px;
+  /* transform: rotate(4.29deg); */
+  transition: 0.3s;
+  &:hover {
+    transform: none;
+  }
 `;
 
 export const HamburgerIcon = styled.i`
@@ -227,5 +233,39 @@ export const OffCanvaContainer = styled(Offcanvas)`
   }
   li {
     padding: 10px 0;
+  }
+`;
+
+export const ResumeButton = styled.div`
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 50px;
+  padding: 17px;
+  width: 200px;
+  line-height: 1;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  font-size: 15px;
+  color: gray;
+  font-weight: 500;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 30px;
+  cursor: pointer;
+  &:hover {
+    transition: 0.3s;
+    color: #fff;
+    background-color: #8750f7;
+    border-color: #8750f7;
+  }
+  @media (max-width: 650px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin: 0 auto 35px auto;
   }
 `;

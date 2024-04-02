@@ -18,4 +18,6 @@ export interface WrapperProsp {
     height?: string;
     margin?: string;
     paddingLeft?: string;
+    textAlign?: string;
+    align?: string;
 }

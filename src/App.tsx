@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 export const GlobalStyle = createGlobalStyle`
 body{  
   font-family: 'Inter', sans-serif;  font-family: 'Fira Code', monospace;
+  position: relative;
 }
  
 `;
@@ -19,10 +20,16 @@ export const LoaderWrapper = styled.div`
   text-align: center;
   margin: auto;
 `;
-
 function App() {
   const [loadTimer, setLoadTimer] = useState(false);
 
+  // document.addEventListener("mousemove", (e) => {
+  //   const cursor = document.querySelector(".cursor");
+  //   cursor?.setAttribute?.(
+  //     "style",
+  //     `top:  ${e.pageY - 25}px; left: ${e.pageX - 25}px;`
+  //   );
+  // });
   useEffect(() => {
     setTimeout(() => {
       setLoadTimer(true);
@@ -31,6 +38,7 @@ function App() {
 
   return (
     <>
+      {/* <div className="cursor"></div> */}
       {!loadTimer ? (
         <LoaderWrapper>
           <div className="loader">
