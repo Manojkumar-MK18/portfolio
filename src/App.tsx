@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 import { Home, Footer, About, Header, Project } from "./components";
 import { Route, Routes } from "react-router";
 import { useEffect, useState } from "react";
@@ -11,42 +11,27 @@ body{
  
 `;
 
-export const LoaderWrapper = styled.div`
-  background: rgb(15 23 42 / 1);
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: auto;
-`;
 function App() {
   const [loadTimer, setLoadTimer] = useState(false);
 
-  // document.addEventListener("mousemove", (e) => {
-  //   const cursor = document.querySelector(".cursor");
-  //   cursor?.setAttribute?.(
-  //     "style",
-  //     `top:  ${e.pageY - 25}px; left: ${e.pageX - 25}px;`
-  //   );
-  // });
   useEffect(() => {
     setTimeout(() => {
       setLoadTimer(true);
-    }, 2000);
+    }, 3000);
   });
 
   return (
     <>
-      {/* <div className="cursor"></div> */}
       {!loadTimer ? (
-        <LoaderWrapper>
-          <div className="loader">
-            <span className="bar"></span>
-            <span className="bar"></span>
-            <span className="bar"></span>
-          </div>
-        </LoaderWrapper>
+        <h1 className="loader">
+          <span>L</span>
+          <span>O</span>
+          <span>A</span>
+          <span>D</span>
+          <span>I</span>
+          <span>N</span>
+          <span>G</span>
+        </h1>
       ) : (
         <>
           <Header />
