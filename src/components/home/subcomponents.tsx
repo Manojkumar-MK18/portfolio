@@ -10,7 +10,7 @@ export const PageWrapper = styled.div`
 
 export const Navbar = styled.header`
   position: fixed;
-  background: radial-gradient(500px at 1050px 250px, #202d41, transparent 90%);
+  background: #202d41;
   height: 70px;
   width: 100%;
   font-family: "Inter", sans-serif;
